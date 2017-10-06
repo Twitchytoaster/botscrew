@@ -1,9 +1,7 @@
 package com.botscrew;
 
 import com.botscrew.cli.OptionHandler;
-import com.botscrew.cli.OptionLoader;
 import org.apache.commons.cli.MissingArgumentException;
-import org.apache.commons.cli.Options;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
