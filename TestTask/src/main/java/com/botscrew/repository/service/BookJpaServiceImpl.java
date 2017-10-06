@@ -25,17 +25,12 @@ public class BookJpaServiceImpl implements BookJpaService {
 
     @Override
     public List<Book> findAllBooks() {
-        return bookRepository.findAll();
+        return bookRepository.getBooksOrderedByName();
     }
 
     @Override
     public List<Book> findBooksByName(String name) {
         return bookRepository.findALlByName(name);
-    }
-
-    @Override
-    public void deleteBookByName(String name) {
-        bookRepository.deleteByName(name);
     }
 
     @Override

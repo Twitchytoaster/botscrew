@@ -9,8 +9,6 @@ public interface BookJpaService {
 
     void delete(Integer id);
 
-    void deleteBookByName(String name);
-
     List<Book> findAllBooks();
 
     List<Book> findBooksByName(String name);
