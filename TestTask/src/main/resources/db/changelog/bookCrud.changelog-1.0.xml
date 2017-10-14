@@ -15,4 +15,18 @@
         </createTable>
     </changeSet>
 
+    <changeSet id="2" author="Taras.Fityo">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="BOOKS" columnName="LENGTH"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="BOOKS">
+            <column name="LENGTH" type="TIMESTAMP"></column>
+        </addColumn>
+    </changeSet>
+    
+    <changeSet id="3" author="Taras">
+        <modifyDataType tableName="BOOKS" columnName="LENGTH" newDataType="int"/>
+    </changeSet>
 </databaseChangeLog>

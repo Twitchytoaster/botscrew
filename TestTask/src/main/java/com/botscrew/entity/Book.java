@@ -1,9 +1,12 @@
-package com.botscrew.model;
+package com.botscrew.entity;
+
+import com.botscrew.cli.annotation.ManagedEntity;
 
 import javax.persistence.*;
 
 @Table(name = "BOOKS")
 @Entity
+@ManagedEntity
 public class Book {
     @Column(name = "NAME")
     private String name;
